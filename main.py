@@ -7,7 +7,9 @@ def exercice2():
     prenom = input("Entrez votre prénom : ")
     print(f"Bonjour, {prenom} !")
 
-
+def exercice3():
+    print("Exercice 3 : Afficher trois lignes")
+    print("Première ligne\nDeuxième ligne\nTroisième ligne")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -16,6 +18,8 @@ def main():
         exercice1()
     elif choix == "2":
         exercice2()
+    elif choix == "3":
+        exercice3()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

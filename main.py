@@ -38,6 +38,13 @@ def exercice7():
     produit = nombre1 * nombre2
     print(f"Le produit des deux nombres est : {produit}")
 
+def exercice8():
+    print ("Exercice 8 : Division simple")
+    nombre1 = float(input("Entrez le premier nombre : "))
+    nombre2 = float(input("Entrez le deuxième nombre : "))
+    quotient = nombre1 / nombre2
+    print(f"Le quotient des deux nombres est : {quotient}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -55,7 +62,8 @@ def main():
         exercice6()
     elif choix == "7":
         exercice7()
-        
+    elif choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

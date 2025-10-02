@@ -73,6 +73,17 @@ def exercice13():
     for i in range(1, 6):
         print(i)
 
+def exercice14():
+    print ("Exercice 14 : Table de 2")
+    for i in range(1, 11):
+        print(f"2 x {i} = {2 * i}")
+
+def exercice15():
+    print ("Exercice 15 : périmètre du carré")
+    cote = float(input("Entrez la longueur du côté du carré : "))
+    perimetre = 4 * cote
+    print(f"Le périmètre du carré est : {perimetre}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -102,6 +113,10 @@ def main():
         exercice12()
     elif choix == "13":
         exercice13()
+    elif choix == "14":
+        exercice14()
+    elif choix == "15":
+        exercice15()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

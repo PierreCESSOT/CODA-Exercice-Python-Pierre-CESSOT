@@ -133,6 +133,17 @@ def exercice22():
     else:
         print("Vous êtes mineur.")
 
+def exercice23():
+    print ("Exercice 23 : Note validée ou non")
+    note = float(input("Entrez votre note (0-20) : "))
+    if 0 <= note <= 20:
+        if note >= 10:
+            print("Note validée.")
+        else:
+            print("Note non validée.")
+    else:
+        print("Note invalide.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -180,6 +191,8 @@ def main():
         exercice21()
     elif choix == "22":
         exercice22()
+    elif choix == "23":
+        exercice23()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

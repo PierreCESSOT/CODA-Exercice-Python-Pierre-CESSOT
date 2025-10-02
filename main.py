@@ -31,6 +31,13 @@ def exercice6():
     resultat = nombre1 - nombre2
     print(f"Le résultat de la soustraction est : {resultat}")
 
+def exercice7():
+    print ("Exercice 7 : Multiplication simple")
+    nombre1 = float(input("Entrez le premier nombre : "))
+    nombre2 = float(input("Entrez le deuxième nombre : "))
+    produit = nombre1 * nombre2
+    print(f"Le produit des deux nombres est : {produit}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -46,6 +53,9 @@ def main():
         exercice5()
     elif choix == "6":
         exercice6()
+    elif choix == "7":
+        exercice7()
+        
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

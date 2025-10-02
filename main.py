@@ -57,6 +57,12 @@ def exercice10():
     double = nombre * 2
     print(f"Le double de {nombre} est : {double}")
 
+def exercice11():
+    print ("Exercice 11 : Moitié d'un nombre")
+    nombre = float(input("Entrez un nombre : "))
+    moitie = nombre / 2
+    print(f"La moitié de {nombre} est : {moitie}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -80,6 +86,8 @@ def main():
         exercice9()
     elif choix == "10":
         exercice10()
+    elif choix == "11":
+        exercice11()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

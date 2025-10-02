@@ -125,6 +125,14 @@ def exercice21():
     else:
         print("Vous avez entré zéro.")
 
+def exercice22():
+    print (" Exercice 22 : Majeur ou mineur")
+    age = int(input("Entrez votre âge : "))
+    if age >= 18:
+        print("Vous êtes majeur.")
+    else:
+        print("Vous êtes mineur.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -170,6 +178,8 @@ def main():
         exercice20()
     elif choix == "21":
         exercice21()
+    elif choix == "22":
+        exercice22()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

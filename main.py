@@ -109,6 +109,12 @@ def exercice19():
     prix_ttc = prix_ht * (1 + tva)
     print(f"Le prix TTC est : {prix_ttc}")
 
+def exercice20():
+    print ("Exercice 20 : Message personnalisé")
+    nom = input("Entrez votre nom : ")
+    age = input("Entrez votre âge : ")
+    print(f"Bonjour {nom}, vous avez {age} ans.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -150,6 +156,8 @@ def main():
         exercice18()
     elif choix == "19":
         exercice19()
+    elif choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

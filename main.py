@@ -102,6 +102,13 @@ def exercice18():
     secondes = minutes * 60
     print(f"{minutes} minutes est égal à {secondes} secondes.")
 
+def exercice19():
+    print ("Exercice 19 : Prix TTC")
+    prix_ht = float(input("Entrez le prix HT : "))
+    tva = 0.2
+    prix_ttc = prix_ht * (1 + tva)
+    print(f"Le prix TTC est : {prix_ttc}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -141,6 +148,8 @@ def main():
         exercice17()
     elif choix == "18":
         exercice18()
+    elif choix == "19":
+        exercice19()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

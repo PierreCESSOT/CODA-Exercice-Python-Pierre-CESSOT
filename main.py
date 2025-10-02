@@ -90,6 +90,12 @@ def exercice16():
     aire = cote ** 2
     print(f"L'aire du carré est : {aire}")
 
+def exercice17():
+    print ("Exercice 17 : convertion euros en dollars")
+    euros = float(input("Entrez le montant en euros : "))
+    dollars = euros * 1.1
+    print(f"{euros} euros est égal à {dollars} dollars.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -125,6 +131,8 @@ def main():
         exercice15()
     elif choix == "16":
         exercice16()
+    elif choix == "17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

@@ -45,6 +45,12 @@ def exercice8():
     quotient = nombre1 / nombre2
     print(f"Le quotient des deux nombres est : {quotient}")
 
+def exercice9():
+    print ("Exercice 9 : Carré d'un nombre")
+    nombre = float(input("Entrez un nombre : "))
+    carre = nombre ** 2
+    print(f"Le carré de {nombre} est : {carre}")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -64,6 +70,8 @@ def main():
         exercice7()
     elif choix == "8":
         exercice8()
+    elif choix == "9":
+        exercice9()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

@@ -246,6 +246,15 @@ def exercice34():
     for i in range(0, n + 1, 2):
         print(i)
 
+def exercice35():
+    print("Exercice 35 : carré parfait")
+    n = int(input("Entrez un nombre entier N : "))
+    for i in range(1, n + 1):
+        if i * i <= n:
+            print(f"{i} est un carré parfait.")
+        else:
+            print(f"{i} n'est pas un carré parfait.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -317,6 +326,8 @@ def main():
         exercice33()
     elif choix == "34":
         exercice34()
+    elif choix == "35":
+        exercice35()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

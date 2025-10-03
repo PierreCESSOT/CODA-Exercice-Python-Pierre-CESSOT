@@ -226,6 +226,26 @@ def exercice31():
     for i in range(n, -1, -1):
         print(i)
 
+def exercice32():
+    print ("Exercice 32 : Somme jusqu'à N")
+    n = int(input("Entrez un nombre entier N : "))
+    somme = 0
+    for i in range(1, n + 1):
+         somme += i
+    print(f"La somme des entiers de 1 à {n} est : {somme}")
+
+def exercice33():
+    print ("Exercice 33 : Table de multiplication")
+    n = int(input("Entrez un nombre entier N : "))
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+def exercice34():
+    print ("Exercice 34 : Nombre pair jusqu'à N")
+    n = int(input("Entrez un nombre entier N : "))
+    for i in range(0, n + 1, 2):
+        print(i)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -291,6 +311,12 @@ def main():
         exercice30()
     elif choix == "31":
         exercice31()
+    elif choix == "32":
+        exercice32()
+    elif choix == "33":
+        exercice33()
+    elif choix == "34":
+        exercice34()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

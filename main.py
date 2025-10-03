@@ -220,6 +220,12 @@ def exercice30():
     for i in range(1, n + 1):
         print(i)
 
+def exercice31():
+    print ("Exercice 31 : Compte à rebours")
+    n = int(input("Entrez un nombre entier N : "))
+    for i in range(n, -1, -1):
+        print(i)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -282,9 +288,9 @@ def main():
     elif choix == "29":
         exercice29()
     elif choix == "30":
-        exercice30()    
-
-
+        exercice30()
+    elif choix == "31":
+        exercice31()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

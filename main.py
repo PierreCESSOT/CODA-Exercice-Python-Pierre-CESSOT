@@ -186,6 +186,18 @@ def exercice27():
     else :
         print("Âge invalide.")
 
+def exercice28():
+    print ("Exercice 28 : Température de l'eau")
+    temperature = float(input("Entrez la température de l'eau en °C : "))
+    if temperature < 0:
+        print("L'eau est à l'état solide.")
+    elif 0 <= temperature < 100:
+        print("L'eau est à l'état liquide.")
+    elif temperature >= 100:
+        print("L'eau est à l'état gazeux.")
+    else:
+        print("Température invalide.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -243,6 +255,8 @@ def main():
         exercice26()
     elif choix == "27":
         exercice27()
+    elif choix == "28":
+        exercice28()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

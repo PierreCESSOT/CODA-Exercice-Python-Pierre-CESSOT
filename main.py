@@ -268,6 +268,24 @@ def exercice37():
     for i in range(1, n + 1):
         print(" " * (n - i) + "*" * (2 * i - 1))
 
+def exercice38():
+    print("Exercice 38 : Calculatrice simple")
+    nombre1 = float(input("Entrez le premier nombre : "))
+    operation = input("Entrez l'opération (+, -, *, /) : ")
+    nombre2 = float(input("Entrez le deuxième nombre : "))
+    if operation == "+":
+        print(f"Résultat : {nombre1 + nombre2}")
+    elif operation == "-":
+        print(f"Résultat : {nombre1 - nombre2}")
+    elif operation == "*":
+        print(f"Résultat : {nombre1 * nombre2}")
+    elif operation == "/":
+        if nombre2 != 0:
+            print(f"Résultat : {nombre1 / nombre2}")
+        else:
+            print("Erreur : Division par zéro.")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -345,6 +363,8 @@ def main():
         exercice36()
     elif choix == "37":
         exercice37()
+    elif choix == "38":
+        exercice38()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

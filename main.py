@@ -285,6 +285,14 @@ def exercice38():
         else:
             print("Erreur : Division par zéro.")
 
+def exercice39():
+    print("Exercice 39 : Deviner si le nombre est pair ou impair")
+    nombre = random.randint(1, 100)
+    choix = input("Devinez si le nombre est pair ou impair (p/i) : ")
+    if (nombre % 2 == 0 and choix == "p") or (nombre % 2 != 0 and choix == "i"):
+        print(f"Bravo ! Le nombre était {nombre}.")
+    else:
+        print(f"Désolé, le nombre était {nombre}.")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -365,6 +373,8 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

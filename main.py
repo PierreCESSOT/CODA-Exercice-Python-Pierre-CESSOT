@@ -255,6 +255,19 @@ def exercice35():
         else:
             print(f"{i} n'est pas un carré parfait.")
 
+def exercice36():
+    print("Exercice 36 : Répéter un mot")
+    mot = input("Entrez un mot : ")
+    n = int(input("Combien de fois voulez-vous le répéter ? "))
+    for _ in range(n):
+        print(mot)
+
+def exercice37():
+    print("Exercice 37 : Pyramide d'étoiles")
+    n = int(input("Entrez le nombre de lignes pour la pyramide : "))
+    for i in range(1, n + 1):
+        print(" " * (n - i) + "*" * (2 * i - 1))
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -328,6 +341,10 @@ def main():
         exercice34()
     elif choix == "35":
         exercice35()
+    elif choix == "36":
+        exercice36()
+    elif choix == "37":
+        exercice37()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

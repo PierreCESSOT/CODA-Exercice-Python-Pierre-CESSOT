@@ -155,6 +155,17 @@ def exercice24():
     else:
         print("Les deux nombres sont égaux.")
 
+def exercice25():
+    print ("Exercice 25 : ordre croissant ou decroissant")
+    nombre1 = float(input("Entrez le premier nombre : "))
+    nombre2 = float(input("Entrez le deuxième nombre : "))
+    if nombre1 < nombre2:
+        print(f"{nombre1} < {nombre2}")
+    elif nombre2 < nombre1:
+        print(f"{nombre2} < {nombre1}")
+    else:
+        print("Les deux nombres sont égaux.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -206,6 +217,8 @@ def main():
         exercice23()
     elif choix == "24":
         exercice24()
+    elif choix == "25":
+        exercice25()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

@@ -144,6 +144,17 @@ def exercice23():
     else:
         print("Note invalide.")
 
+def exercice24():
+    print ("Exercice 24 : Le plus grand des deux nombres")
+    nombre1 = float(input("Entrez le premier nombre : "))
+    nombre2 = float(input("Entrez le deuxième nombre : "))
+    if nombre1 > nombre2:
+        print(f"{nombre1} est le plus grand.")
+    elif nombre2 > nombre1:
+        print(f"{nombre2} est le plus grand.")
+    else:
+        print("Les deux nombres sont égaux.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -193,6 +204,8 @@ def main():
         exercice22()
     elif choix == "23":
         exercice23()
+    elif choix == "24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

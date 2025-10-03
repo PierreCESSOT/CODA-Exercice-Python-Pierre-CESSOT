@@ -198,6 +198,22 @@ def exercice28():
     else:
         print("Température invalide.")
 
+def exercice29():
+    print ("Exercice 29 : Mention au bac")
+    note = float(input("Entrez votre note au bac (0-20) : "))
+    if 0 <= note < 10:
+        print("Recalé")
+    elif 10 <= note < 12:
+        print("Mention : Passable")
+    elif 12 <= note < 14:
+        print("Mention : Assez bien")
+    elif 14 <= note < 16:
+        print("Mention : Bien")
+    elif 16 <= note <= 20:
+        print("Mention : Très bien")
+    else:
+        print("Note invalide.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -257,6 +273,8 @@ def main():
         exercice27()
     elif choix == "28":
         exercice28()
+    elif choix == "29":
+        exercice29()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

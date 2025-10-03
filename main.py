@@ -214,6 +214,12 @@ def exercice29():
     else:
         print("Note invalide.")
 
+def exercice30():
+    print ("Exercice 30 : Compter de 1 à N")
+    n = int(input("Entrez un nombre entier N : "))
+    for i in range(1, n + 1):
+        print(i)
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -275,7 +281,11 @@ def main():
         exercice28()
     elif choix == "29":
         exercice29()
-    else:
-        print("Exercice non reconnu.")
+    elif choix == "30":
+        exercice30()    
+
+
+
+    else: print("Exercice non reconnu.")
 if __name__ == "__main__":
     main()

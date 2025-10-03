@@ -166,6 +166,26 @@ def exercice25():
     else:
         print("Les deux nombres sont égaux.")
 
+def exercice26():
+    print ("Exercice 26 : Divisible par 5")
+    nombre = int(input("Entrez un nombre entier : "))
+    if nombre % 5 == 0:
+        print(f"{nombre} est divisible par 5.")
+    else:
+        print(f"{nombre} n'est pas divisible par 5.")
+
+def exercice27():
+    print ("Exercice 27 : Catégorie d'âge")
+    age = int(input("Entrez votre âge : "))
+    if 0 < age < 12:
+        print("Vous êtes un enfant.")
+    elif 12 <= age < 18:
+        print("Vous êtes un adolescent.")
+    elif age >= 18:
+        print("Vous êtes un adulte.")
+    else :
+        print("Âge invalide.")
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -219,6 +239,10 @@ def main():
         exercice24()
     elif choix == "25":
         exercice25()
+    elif choix == "26":
+        exercice26()
+    elif choix == "27":
+        exercice27()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":

@@ -286,13 +286,24 @@ def exercice38():
             print("Erreur : Division par zéro.")
 
 def exercice39():
-    print("Exercice 39 : Deviner si le nombre est pair ou impair")
-    nombre = random.randint(1, 100)
-    choix = input("Devinez si le nombre est pair ou impair (p/i) : ")
-    if (nombre % 2 == 0 and choix == "p") or (nombre % 2 != 0 and choix == "i"):
-        print(f"Bravo ! Le nombre était {nombre}.")
+    print("Exercice 39 : Deviner pair ou impair")
+    nombre = int(input("Entrez un nombre entier : "))
+    if nombre % 2 == 0:
+        print(f"{nombre} est un nombre pair.")
     else:
-        print(f"Désolé, le nombre était {nombre}.")
+        print(f"{nombre} est un nombre impair.")
+
+def exercice40():
+    print("Exercice 40 : Validation de mot de passe")
+    mot_de_passe = input("Entrez un mot de passe : ")
+    if len(mot_de_passe) < 6:
+        print("Mot de passe trop court. Il doit contenir au moins 6 caractères.")
+    elif not any(char.isdigit() for char in mot_de_passe):
+        print("Mot de passe invalide. Il doit contenir au moins un chiffre.")
+    elif not any(char.isupper() for char in mot_de_passe):
+        print("Mot de passe invalide. Il doit contenir au moins une lettre majuscule.")
+    else:
+        print("Mot de passe valide.")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -375,6 +386,8 @@ def main():
         exercice38()
     elif choix == "39":
         exercice39()
+    elif choix == "40":
+        exercice40()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

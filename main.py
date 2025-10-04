@@ -305,6 +305,16 @@ def exercice40():
     else:
         print("Mot de passe valide.")
 
+def exercice41():
+    print("Exercice 41 : Moyenne de 5 notes")
+    notes = []
+    for i in range(5):
+        note = float(input(f"Entrez la note {i + 1} : "))
+        notes.append(note)
+    moyenne = sum(notes) / len(notes)
+    print(f"La moyenne des 5 notes est : {moyenne}")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -388,6 +398,8 @@ def main():
         exercice39()
     elif choix == "40":
         exercice40()
+    elif choix == "41":
+        exercice41()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":

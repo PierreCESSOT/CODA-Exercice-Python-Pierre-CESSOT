@@ -314,6 +314,25 @@ def exercice41():
     moyenne = sum(notes) / len(notes)
     print(f"La moyenne des 5 notes est : {moyenne}")
 
+def exercice42():
+    print("Exercice 42 : Min et Max de 5 nombres")
+    nombres = []
+    for i in range(5):
+        nombre = float(input(f"Entrez le nombre {i + 1} : "))
+        nombres.append(nombre)
+    min_nombre = min(nombres)
+    max_nombre = max(nombres)
+    print(f"Le nombre minimum est : {min_nombre}")
+    print(f"Le nombre maximum est : {max_nombre}")
+
+def exercice43():
+    print("Exercice 43 : Compteur de voyelles")
+    texte = input("Entrez un texte : ")
+    compteur = 0
+    for char in texte:
+        if char.lower() in "aeiouy":
+            compteur += 1
+    print(f"Le texte contient {compteur} voyelles.")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -400,6 +419,10 @@ def main():
         exercice40()
     elif choix == "41":
         exercice41()
+    elif choix == "42":
+        exercice42()
+    elif choix == "43":
+        exercice43()
 
     else: print("Exercice non reconnu.")
 if __name__ == "__main__":
